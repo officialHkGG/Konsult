@@ -5,69 +5,235 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Konsulta Bygg - Projekt</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="container nav-container">
-      <div class="logo">
-        <img src="bilder/logo.png" alt="Konsulta Bygg">
-        <span>KONSULTA BYGG</span>
+  <div class="container nav-container">
+    <div class="logo">
+      <img src="bilder/Konsulta Logo.jpg" alt="Konsulta Bygg" class="logo-img">
+      <div class="logo-text">
+        <div class="logo-main">KONSULTA</div>
+        <div class="logo-sub">BYGG</div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Hem</a></li>
-          <li><a href="index.html#tjanster">Tjänster</a></li>
-          <li><a href="projekt.html" class="active">Projekt</a></li>
-          <li><a href="om-oss.html">Om oss</a></li>
-          <li><a href="kontakt.html" class="btn-nav">Kontakt</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="index.html#tjanster">Tjänster</a></li>
+        <li><a href="projekt.html">Projekt</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="kontakt.html" class="btn-nav">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- Projekt -->
+  <!-- Projects Hero -->
+  <section class="projects-hero">
+    <div class="container">
+      <h1>Våra Projekt</h1>
+      <p class="subtext">Ett urval av arbeten vi nyligen levererat. Varje projekt är unikt och skräddarsytt efter kundens önskemål.</p>
+    </div>
+  </section>
+
+  <!-- Projects Gallery -->
   <section class="projects">
     <div class="container">
-      <h1>Projekt</h1>
-      <p class="subtext">Ett urval av arbeten vi nyligen levererat.</p>
+      <!-- Project Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Alla projekt</button>
+        <button class="filter-btn" data-filter="renovering">Renovering</button>
+        <button class="filter-btn" data-filter="nybyggnation">Nybyggnation</button>
+        <button class="filter-btn" data-filter="tillbyggnad">Tillbyggnad</button>
+        <button class="filter-btn" data-filter="badrum">Badrum</button>
+        <button class="filter-btn" data-filter="kök">Kök</button>
+      </div>
 
+      <!-- Project Gallery -->
       <div class="project-gallery">
-  <div class="project-card"><img src="bilder/projekt1.jpg" alt="Projekt 1 - Kök"></div>
-  <div class="project-card"><img src="bilder/projekt2.jpg" alt="Projekt 2 - Badrum"></div>
-  <div class="project-card"><img src="bilder/projekt3.jpg" alt="Projekt 3 - Fasadarbete"></div>
-  <div class="project-card"><img src="bilder/projekt4.jpg" alt="Projekt 4 - Uterum"></div>
-  <div class="project-card"><img src="bilder/projekt5.jpg" alt="Projekt 5 - Villa bygge"></div>
-  <div class="project-card"><img src="bilder/projekt6.jpg" alt="Projekt 6 - Trapphus"></div>
-</div>
+        <!-- Project 1 -->
+        <div class="project-card" data-category="kök renovering">
+          <img src="bilder/projekt1.jpg" alt="Modernt kök med öppen planlösning" class="project-img">
+          <div class="project-content">
+            <h3>Modernt Kök i Nacka</h3>
+            <p>Fullständig renovering av kök med öppen planlösning, högkvalitativa material och smarta lösningar för ett familjevänligt utrymme.</p>
+            <div class="project-meta">
+              <span>6 veckor</span>
+              <span class="project-category">Kök</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="badrum renovering">
+          <img src="bilder/projekt2.jpg" alt="Lyxigt badrum med dusch och badkar" class="project-img">
+          <div class="project-content">
+            <h3>Badrumsrenovering i Stockholm</h3>
+            <p>Omfattande renovering av badrum med fokus på funktionalitet och design. Inkluderar ny plumbing, el och avfuktning.</p>
+            <div class="project-meta">
+              <span>4 veckor</span>
+              <span class="project-category">Badrum</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="fasad nybyggnation">
+          <img src="bilder/projekt3.jpg" alt="Fasadarbete på modern villa" class="project-img">
+          <div class="project-content">
+            <h3>Fasadrenovering i Lidingö</h3>
+            <p>Upprustning av villa fasad med moderna material som kombinerar estetik med energieffektivitet och lång livslängd.</p>
+            <div class="project-meta">
+              <span>8 veckor</span>
+              <span class="project-category">Fasad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="uterum tillbyggnad">
+          <img src="bilder/projekt4.jpg" alt="Inredt uterum med glaspartier" class="project-img">
+          <div class="project-content">
+            <h3>Uterum i Bromma</h3>
+            <p>Byggnation av helt nytt uterum med stora glaspartier, värme och belysning för att förlänga utomhussäsongen.</p>
+            <div class="project-meta">
+              <span>10 veckor</span>
+              <span class="project-category">Uterum</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="nybyggnation villa">
+          <img src="bilder/projekt5.jpg" alt="Modern villa under byggnation" class="project-img">
+          <div class="project-content">
+            <h3>Nybyggd Villa i Täby</h3>
+            <p>Totalentreprenad för nybyggnation av modern enfamiljsvilla med fokus på hållbarhet och energieffektivitet.</p>
+            <div class="project-meta">
+              <span>9 månader</span>
+              <span class="project-category">Nybyggnation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="trapphus renovering">
+          <img src="bilder/projekt6.jpg" alt="Renoverat trapphus i äldre fastighet" class="project-img">
+          <div class="project-content">
+            <h3>Trapphus i Östermalm</h3>
+            <p>Renovering av trapphus i äldre fastighet med bevarande av originaldetaljer kombinerat med modern säkerhetsteknik.</p>
+            <div class="project-meta">
+              <span>5 veckor</span>
+              <span class="project-category">Trapphus</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container footer-grid">
-      <div class="footer-logo">
-        <div class="logo">
-          <img src="bilder/logo.png" alt="Konsulta Bygg">
-          <span>KONSULTA BYGG</span>
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-logo">
+      <div class="logo">
+        <img src="bilder/logo.png" alt="Konsulta Bygg" class="logo-img">
+        <div class="logo-text">
+          <div class="logo-main">KONSULTA</div>
+          <div class="logo-sub">BYGG</div>
         </div>
-        <p>© 2025 Konsulta Bygg. Alla rättigheter förbehållna.</p>
       </div>
-      <div class="footer-links">
-        <h4>Snabblänkar</h4>
-        <ul>
-          <li><a href="index.html#tjanster">Tjänster</a></li>
-          <li><a href="projekt.html">Projekt</a></li>
-          <li><a href="om-oss.html">Om oss</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer-info">
-        <h4>Bolagsinfo</h4>
-        <p>Org.nr: 559000-0000</p>
-        <p>Innehar F-skatt</p>
-      </div>
+      <div class="logo-tagline">"INNOVATION, KVALITET OCH HÅLLBARHET I VARJE DETALJ."</div>
+      <p>© 2025 Konsulta Bygg. Alla rättigheter förbehållna.</p>
     </div>
-  </footer>
+    
+    <div class="footer-links">
+      <h4>Snabblänkar</h4>
+      <ul>
+        <li><a href="index.html#tjanster">Tjänster</a></li>
+        <li><a href="projekt.html">Projekt</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-info">
+      <h4>Bolagsinfo</h4>
+      <p>Org.nr: 559000-0000</p>
+      <p>Innehar F-skatt</p>
+      <p>info@konsultabygg.se</p>
+      <p>070-000 00 00</p>
+    </div>
+    
+    <div class="footer-social">
+      <h4>Följ oss</h4>
+      <ul>
+        <li>
+          <a href="https://linkedin.com/company/konsulta-bygg" target="_blank" rel="noopener">
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </span>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/konsultabygg" target="_blank" rel="noopener">
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </span>
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/konsultabygg" target="_blank" rel="noopener">
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </span>
+            Facebook
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="container footer-bottom">
+    <p>Designad med ❤️ för svenskt byggande</p>
+  </div>
+</footer>
+
+  <script>
+    // Simple filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          const filterValue = this.getAttribute('data-filter');
+          
+          projectCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category').includes(filterValue)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
